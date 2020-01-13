@@ -5,10 +5,18 @@
     <title>Starting the JQuery</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      
+      $(document).ready(function(){
+        $("#ev3").click(function(){
+            $(this).hide();
+        });
+      });
     </script>
   </head>
   <body>
-
+    <p>My First JQuery Event 1</p>
+    <p>My First JQuery Event 2</p>
+    <p id="ev3">My First JQuery Event 3</p>
+    <p>My First JQuery Event 4</p>
+    <p>My First JQuery Event 5</p>
   </body>
 </html>

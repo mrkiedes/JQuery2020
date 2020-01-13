@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Visual Effects</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#box1").click(function(){
+          $("#box1").animate({
+            marginLeft: '250px',
+            height: '+=150px',
+            width: '+=150px'
+          });
+          $("#box1").animate({
+            marginTop: '250px'
+
+          });
+        });
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id="box1" style="width:100px;height:100px;background-color:yellow;"></div>
+  </body>
+</html>
